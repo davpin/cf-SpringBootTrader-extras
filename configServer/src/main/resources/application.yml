@@ -1,0 +1,23 @@
+info:
+  component: Config Server
+spring:
+  application:
+    name: configserver
+  profiles.active: local  
+  jmx:
+    default_domain: cloud.config.server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dpinto-pivotal/cf-SpringBootTrader-extras/config-repo
+          repos:
+            - patterns: multi-repo-demo-*
+              uri: https://github.com/dpinto-pivotal/cf-SpringBootTrader-extras/config-repo
+management:
+  context_path: /admin              
+---
+spring:
+  profiles: local
+server:
+  port: 8888
