@@ -10,10 +10,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/dpinto-pivotal/cf-SpringBootTrader-extras/config-repo
-          repos:
-            - patterns: multi-repo-demo-*
-              uri: https://github.com/dpinto-pivotal/cf-SpringBootTrader-extras/config-repo
+          uri: https://github.com/dpinto-pivotal/cf-SpringBootTrader/
+          searchPaths: config-repo
 management:
   context_path: /admin              
 ---
