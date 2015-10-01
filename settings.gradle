@@ -1,1 +1,1 @@
-include 'discoveryServer', 'configServer'
+include 'discoveryServer', 'configServer', 'turbineServer'
