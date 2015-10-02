@@ -10,3 +10,7 @@ This is a discovery server for microservices to register and find out about othe
 2. Config Server:
 
 This is a config server for microservices.
+
+3. Turbine server
+
+This is a turbine and hystrix dashboard server to display circuit breaker information. It uses the discovery server above to find out where and which services to grab information from.
