@@ -10,7 +10,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/dpinto-pivotal/cf-SpringBootTrader-config/
+          uri: https://github.com/pivotal-bank/cf-SpringBootTrader-config/
 #          searchPaths: config-repo
 management:
   context_path: /admin              

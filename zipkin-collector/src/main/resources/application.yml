@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: zipkin-service
+  datasource:
+    schema: classpath:/mysql.sql
+    url: ${vcap.services.zipkinDB.credentials.jdbcUrl}
+    username: ${vcap.services.zipkinDB.credentials.username}
+    password: ${vcap.services.zipkinDB.credentials.password}
+    initialize: true
+    continueOnError: false
+  rabbitmq:
+    host: ${RABBIT_HOST:localhost}
+  cloud:
+    services:
+      registrationMethod: route
+  sleuth:
+    enabled: false
+zipkin:
+  storage:
+    type: mysql
+management:
+  security:
+    enabled: false
+eureka:
+  instance:
+     nonSecurePort: 80
+security:
+  basic:
+    enabled: false

@@ -1,7 +1,7 @@
 buildscript {
   ext {
-        springBootVersion = '1.3.0.M5'
-        springCloudStarterParentTrain = 'Brixton.M1'
+        springBootVersion = '1.4.6.RELEASE'
+        springCloudStarterParentTrain = 'Camden.SR6'
   }
   repositories {
     maven { url "http://repo.spring.io/libs-milestone" }
@@ -15,8 +15,7 @@ buildscript {
 
 apply plugin: 'eclipse'
 apply plugin: 'java'
-apply plugin: 'spring-boot'
-apply plugin: "io.spring.dependency-management"
+apply plugin: 'org.springframework.boot'
 
 jar {
   baseName = 'configServer'
