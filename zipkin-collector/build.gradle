@@ -23,7 +23,7 @@ repositories {
 
 
 ext {
-	springCloudVersion = 'Camden.SR6'
+	springCloudVersion = 'Dalston.SR1'
 	scsVersion = '1.4.1.RELEASE'
 }
 
@@ -31,8 +31,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	//compile("io.pivotal.spring.cloud:spring-cloud-services-starter-config-client")
 	compile("io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry")
-	compile('org.springframework.cloud:spring-cloud-sleuth-zipkin-stream')
-	compile('org.springframework.cloud:spring-cloud-starter-stream-rabbit')
+	compile "org.springframework.cloud:spring-cloud-sleuth-zipkin-stream"
+	compile "org.springframework.cloud:spring-cloud-starter-stream-rabbit"
 	compile("org.springframework.boot:spring-boot-starter-jdbc")
 	runtime('io.zipkin.java:zipkin-autoconfigure-ui')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
